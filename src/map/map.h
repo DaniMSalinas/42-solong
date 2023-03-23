@@ -1,29 +1,24 @@
 /* ************************************************************************** */
 /*                                                                            */
 /*                                                        :::      ::::::::   */
-/*   read_map.c                                         :+:      :+:    :+:   */
+/*   map.h                                              :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
 /*   By: dmaldona <dmaldona@student.42madrid.com    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
-/*   Created: 2023/03/22 18:06:26 by dmaldona          #+#    #+#             */
-/*   Updated: 2023/03/22 19:04:57 by dmaldona         ###   ########.fr       */
+/*   Created: 2023/03/23 15:48:23 by dmaldona          #+#    #+#             */
+/*   Updated: 2023/03/23 16:13:06 by dmaldona         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
-#include "src.h"
+#ifndef MAP_H
+# define MAP_H
+# include <fcntl.h>
+# include "../libft/libft.h"
 
-char	**read_map(char *map_address)
-{
-	int		fd;
-	int		line;
-	char	**hola;
-
-	line = 0;
-	fd = open(map_address, O_RDONLY);
-	while (fd)
-	{
-		get_next_line(fd);
-		line++;
-	}
-	return (hola);
-}
+char	**read_map(char *map_address);
+int		validate_map_size(int rows, int columns);
+int		validate_map_structure(char **map, int rows, int columns);
+int		get_map_cols(int fd);
+int		get_map_rows(int fd);
+void	error_handler(char *str);
+#endif

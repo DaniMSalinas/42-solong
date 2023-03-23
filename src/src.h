@@ -6,7 +6,7 @@
 /*   By: dmaldona <dmaldona@student.42madrid.com    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2023/03/22 17:55:05 by dmaldona          #+#    #+#             */
-/*   Updated: 2023/03/22 19:02:29 by dmaldona         ###   ########.fr       */
+/*   Updated: 2023/03/23 18:31:34 by dmaldona         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -14,9 +14,6 @@
 # define SRC_H
 # include <fcntl.h>
 # include "libft/libft.h"
-# include "gnl/get_next_line.h"
+# include "map/map.h"
+# include "mlx/mlx.h"
 #endif
-
-int     validate_map();
-char    **read_map(char *map_address);
-

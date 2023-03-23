@@ -1,16 +1,15 @@
 /* ************************************************************************** */
 /*                                                                            */
 /*                                                        :::      ::::::::   */
-/*   solong.h                                           :+:      :+:    :+:   */
+/*   graphic.h                                          :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
 /*   By: dmaldona <dmaldona@student.42madrid.com    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
-/*   Created: 2023/03/22 17:53:00 by dmaldona          #+#    #+#             */
-/*   Updated: 2023/03/23 16:00:04 by dmaldona         ###   ########.fr       */
+/*   Created: 2023/03/23 16:39:19 by dmaldona          #+#    #+#             */
+/*   Updated: 2023/03/23 16:39:49 by dmaldona         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
-#ifndef SOLONG_H
-# define SOLONG_H
-# include "src/src.h"
+#ifndef GRAPHIC_H
+# define GRAPHIC_H
 #endif
